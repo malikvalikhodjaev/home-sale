@@ -32,6 +32,17 @@ try {
         'deals/README.md',
         'goals/README.md',
         'work/README.md',
+        'methods/README.md',
+        'methods/registry.md',
+        'roles/README.md',
+        'roles/registry.md',
+        'localizations/uzbekistan/README.md',
+        'localizations/uzbekistan/legal/sale-qualification-v0.1.md',
+        'knowledge/README.md',
+        'knowledge/learning-path.md',
+        'knowledge/problem-map.md',
+        'knowledge/beginner-mistakes.md',
+        'knowledge/sources.md',
         'GITHUB_PUSH_CHECKLIST.md'
     )
     foreach ($file in $required) {
