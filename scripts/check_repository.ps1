@@ -19,9 +19,19 @@ try {
         'governance/SALE_CONFIG_v0.1.md',
         'context/current.md',
         'property/facts.md',
-        'property/legal-status.md',
-        'price/strategy.md',
-        'listings/canonical/ru.md',
+        'descriptions/legal/status.md',
+        'descriptions/product-offer/pricing.md',
+        'market/comparables/README.md',
+        'operations/open-decisions.md',
+        'operations/status.md',
+        'STRUCTURE.md',
+        'descriptions/advertising/canonical/ru.md',
+        'platforms/README.md',
+        'portraits/README.md',
+        'leads/README.md',
+        'deals/README.md',
+        'goals/README.md',
+        'work/README.md',
         'GITHUB_PUSH_CHECKLIST.md'
     )
     foreach ($file in $required) {
