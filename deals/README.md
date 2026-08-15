@@ -17,4 +17,6 @@
 
 Обязательный gate безопасности определяется в `governance/SALE_CONFIG_v0.1.md` и `descriptions/legal/status.md`. Быстрый срок или высокая цена не компенсируют незакрытый gate.
 
+Исполнимая последовательность gate для конкретного предложения находится в `SAFETY_GATE.md`.
+
 Юрисдикционная квалификация маршрута: `localizations/uzbekistan/legal/sale-qualification-v0.1.md`.

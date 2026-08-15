@@ -36,6 +36,32 @@
 
 Если контроль не пройден, задача может иметь выполненные действия, но не считается принятой. Отклонение допускается только явным решением владельца, если оно не нарушает safety gate или обязательное право.
 
+## Реализованные механизмы
+
+- Канонические факты объекта: `property/FACT_CONTROL.md`.
+- Юридическая квалификация: `descriptions/legal/LEGAL_QUALIFICATION_GATE.md`.
+- Обоснованное изменение цены: `descriptions/product-offer/PRICE_CHANGE_CONTROL.md`.
+- Согласованность публикаций: `platforms/PUBLICATION_CONSISTENCY_CONTROL.md`.
+- Квалификация до показа: `leads/QUALIFICATION_CONTROL.md`.
+- Полномочия агента: `roles/AGENT_AUTHORITY_CONTROL.md`.
+- Safety gate сделки: `deals/SAFETY_GATE.md`.
+- Защита документов и персональных данных: `governance/PRIVACY_CONTROL.md`.
+
+Каждый механизм содержит триггер, действия, evidence, stop/go и текущий статус. Наличие файла означает готовность механизма, но не прохождение контроля в конкретном случае.
+
+## Реализованные механизмы
+
+- Канонические факты объекта: `property/FACT_CONTROL.md`.
+- Юридическая квалификация: `descriptions/legal/LEGAL_QUALIFICATION_GATE.md`.
+- Обоснованное изменение цены: `descriptions/product-offer/PRICE_CHANGE_CONTROL.md`.
+- Согласованность публикаций: `platforms/PUBLICATION_CONSISTENCY_CONTROL.md`.
+- Квалификация до показа: `leads/QUALIFICATION_CONTROL.md`.
+- Полномочия агента: `roles/AGENT_AUTHORITY_CONTROL.md`.
+- Safety gate сделки: `deals/SAFETY_GATE.md`.
+- Защита документов и персональных данных: `governance/PRIVACY_CONTROL.md`.
+
+Каждый механизм содержит триггер, действия, evidence, stop/go и текущий статус. Наличие файла означает готовность механизма, но не прохождение контроля в конкретном случае.
+
 ## Обнаруженная ошибка
 
 Обнаружение ошибки создаёт запись решения или корректирующую задачу. Исходное наблюдение не стирается. Исправление факта или публикации получает новую версию, когда меняет управляемую конфигурацию.
