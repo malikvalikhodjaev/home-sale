@@ -17,6 +17,7 @@ try {
         'README.md',
         'governance/CHARACTERISTIC_SELECTION_RULES.md',
         'governance/SALE_CONFIG_v0.1.md',
+        'governance/BEGINNER_ERROR_CONTROLS.md',
         'context/current.md',
         'property/facts.md',
         'descriptions/legal/status.md',
@@ -26,12 +27,14 @@ try {
         'operations/status.md',
         'STRUCTURE.md',
         'descriptions/advertising/canonical/ru.md',
+        'descriptions/advertising/PRE_PUBLICATION_GATE.md',
         'platforms/README.md',
         'portraits/README.md',
         'leads/README.md',
         'deals/README.md',
         'goals/README.md',
         'work/README.md',
+        'work/TASK_CONTROL_TEMPLATE.md',
         'methods/README.md',
         'methods/registry.md',
         'roles/README.md',
@@ -53,7 +56,8 @@ try {
 
     $blockedExtensions = @(
         '.pdf', '.doc', '.docx', '.xls', '.xlsx', '.jpg', '.jpeg',
-        '.png', '.heic', '.tif', '.tiff', '.bmp', '.gif'
+        '.png', '.heic', '.tif', '.tiff', '.bmp', '.gif', '.zip',
+        '.rar', '.7z', '.env'
     )
     foreach ($file in $tracked) {
         $path = $file.Replace('\', '/')
@@ -87,6 +91,12 @@ try {
         }
         if ($extension -eq '.md' -and $content -match '(?m)^\s*(CHR|PRICE|TIME|EFFORT|GUARD)-[A-Z0-9-]+\b') {
             $errors.Add('Internal characteristic code in Markdown: ' + $file)
+        }
+        if ($content -match 'https?://drive\.google\.com/(drive/folders|file/d)/') {
+            $errors.Add('Direct Google Drive link in tracked text: ' + $file)
+        }
+        if ($content -match '(?<!\d)(?:\+998|998)[\s-]?\d{2}[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}(?!\d)') {
+            $errors.Add('Possible Uzbekistan phone number in tracked text: ' + $file)
         }
     }
 
