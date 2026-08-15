@@ -1,0 +1,33 @@
+# Сырые и чувствительные материалы
+private/
+documents/private/
+media/originals/
+media/working/
+
+# Бинарные документы и оригинальные изображения по умолчанию не отслеживаются
+*.pdf
+*.xlsx
+*.xls
+*.docx
+*.sh3d
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.webp
+
+# Разрешены только специально отобранные WebP для публикации
+!media/published/
+!media/published/**/*.webp
+
+# Временные и системные файлы
+~$*
+*.tmp
+*.bak
+Thumbs.db
+desktop.ini
+.DS_Store
+.env
+.env.*
+exports/
+tmp/
