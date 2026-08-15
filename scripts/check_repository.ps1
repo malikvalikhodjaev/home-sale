@@ -33,6 +33,7 @@ try {
         'leads/README.md',
         'deals/README.md',
         'goals/README.md',
+        'goals/LEVEL_MODEL.md',
         'work/README.md',
         'work/TASK_CONTROL_TEMPLATE.md',
         'methods/README.md',
